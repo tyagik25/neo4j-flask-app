@@ -6,11 +6,10 @@ import os
 
 port = int(os.environ.get('PORT', 5000))
 
-# url = "bolt://localhost:7687"
-# //auth="neo4j:password"
-# url = os.environ.get('GRAPHENEDB_BOLT_URL', 'bolt://localhost:7687')
-# url = os.environ.get('GRAPHENEDB_BOLT_URL','bolt://localhost:7687')
-url = "bolt://hobby-ijgbocbmijcpgbkejfelbpfl.dbs.graphenedb.com:24787"
+url = "bolt://localhost:7687"
+
+#uncomment this if deploying on heroku
+# url = "bolt://hobby-ijgbocbmijcpgbkejfelbpfl.dbs.graphenedb.com:24787"
 username = os.environ.get("GRAPHENEDB_BOLT_USER","neo4j")
 password = os.environ.get("GRAPHENEDB_BOLT_PASSWORD","password")
 
