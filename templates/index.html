@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome {% endblock %}</h1>
+    <br>
+    <br>
+    
+    <div>
+        
+          
+            <div class="form-group">
+                <a href="{{ url_for('add_emp') }}">
+                <button type="button" class="btn btn-primary">Add Employees</button>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <a href="{{ url_for('show_emp') }}">
+                <button type="button" class="btn btn-primary">Show Employees</button>
+                </a>
+            </div>
+          
+        </div>
+{% endblock %}

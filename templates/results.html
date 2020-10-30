@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+{% block content %}<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+        <title>Employees in Database</title>
+    </head>
+    <body><br>
+        <br>
+        <div>
+    <div>
+       <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>EmpID</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{row['n.name']|e}}</td>
+                    <td>{{row['n.id']|e}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    </div>
+    </body>
+</html>
+{% endblock %}
