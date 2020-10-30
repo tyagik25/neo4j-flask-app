@@ -14,7 +14,7 @@ username = os.environ.get("GRAPHENEDB_BOLT_USER","neo4j")
 password = os.environ.get("GRAPHENEDB_BOLT_PASSWORD","password")
 
 # driver = GraphDatabase.driver(url, auth=(username, password))
-graph = Graph(url, auth=(username, password),secure=True)
+graph = Graph(url, auth=(username, password))
 # session = driver.session()
 
 
