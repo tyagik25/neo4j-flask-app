@@ -39,7 +39,8 @@ Once you go to the above url, follow the below steps:
 
 Then execute ```python app.py``` from the root directory
 
-Go to the url [http://0.0.0.0:5000/](http://0.0.0.0:5000/), you will see the application running.
+**Go to the url 
+[http://0.0.0.0:5000/](http://0.0.0.0:5000/) , you will see the application running.**
 
 
 
