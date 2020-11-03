@@ -5,7 +5,7 @@ An application written in Python powered by Flask and Neo4j.
 You must have Python3, Neo4j and Flask (for API) installed.
 
 ## Project Structure
-This project has  major parts:
+This project has three major parts:
 
 1. app.py - This contains Flask APIs that receives employee details such as Employee Name and Employee ID through GUI or API calls, and returns it.
 2. templates - This folder contains the HTML template that allows user to enter Employee Name and Employee ID and displays it.
